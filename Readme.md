@@ -31,7 +31,7 @@ The School Management App is a comprehensive solution designed to streamline and
 
 ### Prerequisites
 
-- Node.js (v12 or higher) 
+- Node.js (v22 or higher) 
 - A database server MongoDB
 - Git
 
