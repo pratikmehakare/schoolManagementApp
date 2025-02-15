@@ -18,7 +18,7 @@ export function register(
   navigate
 ) {
   return async (dispatch) => {
-    const toastId = toast.loading("Wait..,Connecting to backend")
+    const toastId = toast.loading("Wait Connecting to backend..")
     dispatch(setLoading(true))
     try {
       const response = await apiConnector("POST", REGISTER_API, {
@@ -50,7 +50,7 @@ export function register(
 export function login(email, password, navigate) {
   
   return async (dispatch) => {
-    const toastId = toast.loading("Wait..,Connecting to backend")
+    const toastId = toast.loading("Wait Connecting to backend..")
     dispatch(setLoading(true))
     try {
       const response = await apiConnector("POST", LOGIN_API, {
