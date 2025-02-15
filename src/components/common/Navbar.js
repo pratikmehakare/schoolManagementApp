@@ -11,7 +11,6 @@ const Navbar = () => {
     console.log("user from navbar", user);
   }, [user]);
 
-  // Helper function to compute initials from the user's name
   const getInitials = (name) => {
     if (!name) return "";
     const words = name.split(" ");
@@ -22,7 +21,6 @@ const Navbar = () => {
     );
   };
 
-  // Determine the button text and path based on the current route
   const getButtonConfig = () => {
     if (location.pathname === "/") {
       return { text: "Register", path: "/register" };
@@ -38,10 +36,16 @@ const Navbar = () => {
   return (
     <nav className="bg-gray-900 text-white shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
-          <div className="flex-shrink-0 flex items-center">
+        <div className="flex justify-between items-center h-16">
+          <div className="flex-shrink-0 flex gap-2 items-center">
+            <img
+              src="/icon 1.png" 
+              alt="Logo"
+              className="h-10 w-10"
+            />
             <span className="text-xl font-bold">School of Cuvette</span>
           </div>
+
           <div className="flex items-center">
             {user?.name ? (
               <div className="flex items-center space-x-3">
@@ -51,7 +55,6 @@ const Navbar = () => {
                     {getInitials(user.name)}
                   </span>
                 </div>
-                {/* Display user's name */}
                 <span className="text-sm">{user.name}</span>
               </div>
             ) : (
