@@ -53,11 +53,15 @@ The School Management App is a comprehensive solution designed to streamline and
     npm install
 4. **Configure Environment Variables:**
 
-    Create a .env file in the project root and add the necessary configurations:
+    Create a .env file in the backend and add the necessary configurations:
 
         PORT= 4000
         MONGO_URI = Enter your url
         JWT_SECRET = Enter your jwt_scret
+
+    Create a .env file in the project root and add the necessary configurations: 
+
+        REACT_APP_API_URL  = YOUR_BACKEND_URL/api/v1
 
 5. **Run the Application:**
 
