@@ -16,7 +16,7 @@ The School Management App is a comprehensive solution designed to streamline and
 - **Assignments & Grading:** Creation, submission, and grading of assignments.
 - **Reports & Analytics:** Generate detailed reports and performance analytics.
 - **Responsive Design:** Mobile-friendly interface ensuring accessibility across all devices.
-- **Multilingual Support:** Catering to a diverse user base with multiple language options.
+- **Management:** Admin can delete and edit Student and Teacher profile.Can add, delete, update, Class. and assign teacher and student.
 
 ## Technologies Used
 
